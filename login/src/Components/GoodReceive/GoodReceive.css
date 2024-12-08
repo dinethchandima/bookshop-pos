@@ -1,0 +1,260 @@
+/* Global Styles */
+.good-receive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content-box11 {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+/* Dropdown Styling */
+.dropdown-container {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.dropdown {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+  width: 180px;
+  color: #333;
+  font-size: 16px;
+}
+
+.dropdown:focus {
+  outline: none;
+  border-color: #d84339;
+}
+
+/* Form Container */
+.form-container11 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-group11 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group11 label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.form-group11 input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  transition: border-color 0.3s ease;
+}
+
+.form-group11 input:focus {
+  border-color: #d84339;
+  outline: none;
+}
+
+/* Table Styling */
+.product-table11 {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.product-table11 th {
+  background-color: #f4f4f4;
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+}
+
+.product-table11 td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.product-table11 td.numeric {
+  text-align: right;
+}
+
+/* Search Row */
+.search-row11 th {
+  padding: 10px 8px;
+}
+
+.search-input11 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f4f2f0;
+  transition: border-color 0.3s ease;
+}
+
+.search-input11:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Bottom Section */
+.bottom-section11 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* Calculation Fields */
+.calculation-fields11 {
+  display: grid;
+  gap: 15px;
+}
+
+.summary-section11 {
+  font-size: 18px;
+  text-align: right;
+  width: 250px;
+}
+
+.summary-item11 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.buttons-container11 {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.close-button11,
+.save-button11,
+.add-button11 {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.close-button11 {
+  background-color: #999999;
+  color: white;
+}
+
+.close-button11:hover {
+  background-color: #777777;
+}
+
+.save-button11 {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.save-button11:hover {
+  background-color: #4a90e2;
+}
+
+.add-button11 {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.add-button11:hover {
+  background-color: #4a90e2;
+}
+
+/* Modal Styles */
+.modal11 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.modal-content11 {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content11 input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.modal-buttons11 {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.add-row-button11,
+.cancel-button11 {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-row-button11 {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.add-row-button11:hover {
+  background-color: #4a90e2;
+}
+
+.cancel-button11 {
+  background-color: #ccc;
+  color: white;
+}
+
+.cancel-button11:hover {
+  background-color: #aaa;
+}

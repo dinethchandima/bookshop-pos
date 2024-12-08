@@ -1,0 +1,51 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  background-color: #f4f4f9; /* Light background for the dashboard */
+  border-radius: 10px; /* Rounded corners for the container */
+}
+
+/* Title Styling */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #4a90e2; /* Title color */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+/* Overview Container */
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Increased gap for better spacing */
+  justify-content: center; /* Center the cards */
+}
+
+/* Card Styling */
+.card3 {
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #d1e3f8; /* Light blue border */
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card3:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Card Title Styling */
+.card-title {
+  color: #4a90e2; /* Blue text color */
+  margin-bottom: 15px; /* Spacing below the title */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card3 {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

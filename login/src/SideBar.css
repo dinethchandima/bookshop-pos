@@ -1,0 +1,120 @@
+/* General Dashboard Layout */
+.dashboard {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f4f4f9);
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #ffffff;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 260px;
+  height: 100%;
+  text-align: left;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.sidebar .shopname {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sidebar .shopname h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a90e2;
+}
+
+.sidebar .shop-icon {
+  font-size: 40px;
+  color: #4a90e2;
+}
+
+.sidebar button {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar button span {
+  margin-left: 15px;
+}
+
+.sidebar button:hover {
+  background-color: #e9effb;
+  color: #4a90e2;
+}
+
+.sidebar button.active {
+  background: linear-gradient(135deg, #4a90e2, #007bff);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+/* Content Area Styling */
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+}
+
+.content > div {
+  background-color: #f4f4f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .sidebar button {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
+/* Button and Icon Styling */
+.sidebar button svg {
+  font-size: 20px;
+}
+
+.sidebar button:hover svg {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}

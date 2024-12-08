@@ -1,0 +1,20 @@
+login and register  
+
+User                System
+   |                    |
+   |------------------->|
+   |  Enter login       |
+   |  credentials       |
+   |                    |
+   |<-------------------|
+   |  Verify credentials|
+   |                    |
+   |<-------------------|
+   | If successful, log |
+   |  in the user       |
+   |                    |
+   |<-------------------|
+   | If credentials are |
+   | incorrect, show    |
+   | login error        |
+   |                    |
